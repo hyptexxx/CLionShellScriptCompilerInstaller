@@ -143,22 +143,22 @@ if(test-connection chocolatey.org -Count 1 -Quiet) {
 		Write-Host wsl successfully upgraded -ForegroundColor Green
 		$upgradedList += 'wsl'
 	}
+	Write-Host install errors: $installErrors.Count -ForegroundColor Red
+	Write-Host install errors: $installErrors -ForegroundColor Red
+	Write-Host 
+	Write-Host upgrade errors: $upgradeErrors.Count -ForegroundColor Red
+	Write-Host upgrade errors: $upgradeErrors -ForegroundColor Red
+	Write-Host
+	$totalInstallCount = 5-$installErrors.Count
+	$upgradeCount = 5-$upgradeErrors.Count
+	Write-Host total installed: $totalInstallCount -ForegroundColor Green
+	Write-Host total upgraded: $upgradeCount -ForegroundColor Green
+	Write-Host
+	if(($installedList.Count -ge 0) -and ($upgradedList.Count -ge 0)) {
+		Write-Host total installed: $installedList -ForegroundColor Green
+		Write-Host total upgraded: $upgradedList -ForegroundColor Green
+	}
 } else {
 	Write-Host error establishing internet connection -ForegroundColor Red
-}
-Write-Host install errors: $installErrors.Count -ForegroundColor Red
-Write-Host install errors: $installErrors -ForegroundColor Red
-Write-Host 
-Write-Host upgrade errors: $upgradeErrors.Count -ForegroundColor Red
-Write-Host upgrade errors: $upgradeErrors -ForegroundColor Red
-Write-Host
-$totalInstallCount = 5-$installErrors.Count
-$upgradeCount = 5-$upgradeErrors.Count
-Write-Host total installed: $totalInstallCount -ForegroundColor Green
-Write-Host total upgraded: $upgradeCount -ForegroundColor Green
-Write-Host
-if(($installedList.Count -ge 0) -and ($upgradedList.Count -ge 0)) {
-	Write-Host total installed: $installedList -ForegroundColor Green
-	Write-Host total upgraded: $upgradedList -ForegroundColor Green
 }
 Read-Host -Prompt "Press Enter to exit"
