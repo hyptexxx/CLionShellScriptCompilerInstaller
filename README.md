@@ -1,8 +1,8 @@
 # CLionShellScriptCompilerInstaller
 CLion PowerShell script, for automatically compilers install, update and configure 
 
-<h2>This script uses the windows batch Manager:</h2>
-<code>chocolatey</code>
+<h2>This script installs and uses the windows package manager:</h2>
+<code>Chocolatey</code>
 <h2>Official site:</h2>
 https://chocolatey.org/
 <h2>Using it, the components will be installed and configured sequentially.</h2>
