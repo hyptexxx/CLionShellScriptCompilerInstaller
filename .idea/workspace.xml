@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff7826d-ca76-4815-a1a6-ed6818630d6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CLionShellScriptInstaller.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/CLionShellScriptInstaller.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588607840321</updated>
-      <workItem from="1588607842524" duration="2336000" />
+      <workItem from="1588607842524" duration="2983000" />
     </task>
     <servers />
   </component>
